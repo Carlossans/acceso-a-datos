@@ -16,7 +16,7 @@ public class Main {
         gestEmp.agregarEmpleados(Ana);
 
 
-        gestEmp.mostrarEmpleados();
+        //gestEmp.mostrarEmpleados();
         gestEmp.ordenarPorDni();
         System.out.println("");
         gestEmp.mostrarEmpleados();
