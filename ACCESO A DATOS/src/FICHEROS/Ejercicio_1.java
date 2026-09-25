@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 public class Ejercicio_1 {
     static void main(String[] args) {
-        // el usuario introduce el nombre de un fichero que el indique
+        // el usuario introduce el nombre de un fichero que él indique
         // y luego se le pregunta que es lo que quiere escribir en el fichero
-        // una vez escrita la primera línea se le preguntará si quiere escribir otra linea, leer el fichero, borrar el fichero o terminar
+        // una vez escrita la primera línea se le preguntará si quiere escribir otra línea, leer el fichero, borrar el fichero o terminar
 
         Scanner teclado = new Scanner(System.in);
 
@@ -15,7 +15,6 @@ public class Ejercicio_1 {
         String nombreFichero = teclado.nextLine();
 
         try (FileWriter fw = new FileWriter(nombreFichero)) {
-
             System.out.println("\nEl fichero se ha creado correctamente");
             System.out.println("\nEscribe lo que quieras: \n");
             fw.write(teclado.nextLine());
@@ -80,7 +79,6 @@ public class Ejercicio_1 {
                 default:
                     System.out.println("\nOpción no válida");
             }
-
         } while (opcion != 4);
     }
 }
